@@ -4,8 +4,28 @@ A PHP package for EthicShare for citation de-duplication. Must run both in and o
 
 ## Installing
 
-This is an old pre-Composer version of this package, which requires manual installation.
+Install via [Composer](http://getcomposer.org). In your project's `composer.json`:
 
-## Newer Versions
+```json
+  "require": {
+    "umnlib/cite-identifierset": "1.0.*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.umn.edu:Libraries/cite-identifierset.git"
+    }
+  ]
+```
 
-For newer versions of this package that use Composer, see any versions `>=1.0.0`.
+## System Dependencies
+
+This package requires a MySQL server, client, and the PHP MySQL extensions.
+
+## Running the Tests
+
+Running the PHPUnit tests requires configuration. Notice that `phpunit.xml.dist` contains places to put your MySQL credentials. Do not modify that file! Instead, copy the file to `phpunit.xml`, which will override `phpunit.xml.dist`, and insert your credentials into that file. This repository is configured to ignore `phpunit.xml`, which helps to prevent exposing sensitive information, like passwords, to public source control repositories.
+
+## Older Versions
+
+For older versions of this package that did not use Composer, see the `0.x.y` releases.

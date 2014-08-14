@@ -1,0 +1,29 @@
+{
+  "name": "umnlib/cite-identifierset",
+  "description": "A PHP package for EthicShare for citation de-duplication. Must run both in and out of Drupal.",
+  "keywords": [],
+  "authors": [
+    {
+      "name": "David Naughton",
+      "email": "naughton@umn.edu"
+    }
+  ],
+
+  "require": {
+  },
+
+  "repositories": [
+  ],   
+
+  "require-dev": {
+    "phpunit/phpunit": ">=3.7"
+  },
+
+  "autoload": {
+    "psr-4": {"UmnLib\\EthicShare\\": "src/"}
+  },
+
+  "autoload-dev": {
+    "psr-4": {"UmnLib\\EthicShare\\Tests\\": "tests/"}
+  }
+}
