@@ -13,7 +13,7 @@ Install via [Composer](http://getcomposer.org). In your project's `composer.json
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.umn.edu:Libraries/cite-identifierset.git"
+      "url": "git@github.com:UMNLibraries/cite-identifierset.git"
     }
   ]
 ```
@@ -29,3 +29,7 @@ Running the PHPUnit tests requires configuration. Notice that `phpunit.xml.dist`
 ## Older Versions
 
 For older versions of this package that did not use Composer, see the `0.x.y` releases.
+
+## Attribution
+
+The University of Minnesota Libraries created this software for the [EthicShare](http://www.ethicshare.org/about) project.
